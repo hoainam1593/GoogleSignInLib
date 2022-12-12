@@ -12,6 +12,8 @@ import com.google.android.gms.auth.api.identity.SignInClient;
 import com.google.android.gms.auth.api.identity.SignInCredential;
 import com.google.android.gms.common.api.ApiException;
 
+import com.unity3d.player.UnityPlayer;
+
 public class GoogleLoginActivity extends Activity {
 
     private static final int REQ_ONE_TAP = 2;

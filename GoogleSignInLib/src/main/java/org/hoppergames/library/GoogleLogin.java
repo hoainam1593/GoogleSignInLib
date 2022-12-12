@@ -10,7 +10,7 @@ public class GoogleLogin {
     {
         webClientId = clientId;
 
-        Intent myIntent = new Intent(activity, GoogleLogin.class);
+        Intent myIntent = new Intent(activity, GoogleLoginActivity.class);
         activity.startActivity(myIntent);
     }
 }
