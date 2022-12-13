@@ -52,7 +52,7 @@ public class GoogleLoginActivity extends Activity {
                 .builder()
                 .setSupported(true)
                 .setServerClientId(clientId)
-                .setFilterByAuthorizedAccounts(true)
+                .setFilterByAuthorizedAccounts(false)
                 .build();
         return BeginSignInRequest
                 .builder()
