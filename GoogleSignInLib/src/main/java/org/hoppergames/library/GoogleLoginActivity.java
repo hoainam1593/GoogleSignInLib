@@ -81,11 +81,13 @@ public class GoogleLoginActivity extends Activity {
     }
 
     private void FinishSuccess(String token){
+        oneTapClient.signOut();
         finish();
         UnityPlayer.UnitySendMessage("MobirixLib_GoogleLogin", "GoogleLoginSuccess", token);
     }
 
     private void FinishFailed(String errMsg){
+        oneTapClient.signOut();
         finish();
         UnityPlayer.UnitySendMessage("MobirixLib_GoogleLogin", "GoogleLoginFailure", errMsg);
     }
